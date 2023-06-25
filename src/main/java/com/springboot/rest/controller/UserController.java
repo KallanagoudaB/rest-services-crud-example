@@ -29,7 +29,7 @@ description = "CRUD operations for User resource")
 public class UserController {
 	
 	UserService userService;
-	@Operation(description = "Used to create User into database")
+	@Operation(description = "Used to create User in to database")
 	@ApiResponse(responseCode = "201 USER CREATED")
 	@PostMapping
 	public ResponseEntity<User> createUser(@RequestBody User user) {
